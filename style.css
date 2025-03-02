@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.culculator {
+  margin: auto;
+  margin-top: 100px;
+
+
+  border-radius: 10px;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: black;
+  width: 200px; 
+   height: 260px;
+ 
+}
+.input-dispaly {
+  /* width: 380px; */
+  height: 50px;
+  padding: 10px 40px 10px 40px;
+  margin-top: -50px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+  color: aliceblue;
+  font-size: 25px;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+  color: #ffffff;
+}
+.input-dispaly::placeholder {
+  color: #ffffff;
+}
+
+.culculator-buttons {
+  
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px ;
+
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.equal-btn {
+  grid-column: span 2;
+  background-color: aquamarine;
+}
+
+.culculator-btn {
+  border-radius: 5px;
+  background-color: #252826;
+  height: 3.3vw;
+  color: white;
+  font-size: 2vw;
+}
+.culculator-btn:active {
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+  .culculator-buttons {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px ;
+  }
+  .culculator-btn {
+    height: 50px;
+
+    font-size: 30px;
+  }
+}
